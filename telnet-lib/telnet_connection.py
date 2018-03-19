@@ -7,7 +7,7 @@ import time
 import ipaddress
 import subprocess
 import getpass
-subnet=ipaddress.ip_network('192.168.0.195/32')
+subnet=ipaddress.ip_network('192.168.0.195/32')#а можно и так 192.168.0.0/24
 #в данном случае в связи с отсутвием переменных при парсинге, header нужко указывать 
 #в  какой последовательности идет  вывод с коммутатора.
 switch_all=[['Device Type','Mac','IP Address','Vlan','Boot ver','firmware ver'],]
