@@ -106,8 +106,6 @@ except:
 ################################################################
 #подсеть для изучения
 #subnet=ipaddress.ip_network(ipaddr)
-#default_param={'device_type':'cisco_ios_telnet','username':'mgmt','password':'1valera2'}#параметры для подключения к оборудованию
-#default_param={'device_type':'cisco_ios_telnet','username':'admin','password':'reinfokom'}#параметры для подключения к оборудованию
 #scanned_files=['device_dlink.yml','device_snr.yml']
 # одно изученно устройство
 devices_dict={}
@@ -118,7 +116,7 @@ devices_list=[]
 subnet=ipaddress.ip_network(ipaddr)
 devices=[]
 for host in subnet:
-    default_param={'device_type':'cisco_ios_telnet','username':'admin','password':'reinfokom','ip':str(host)}#параметры для подключения к оборудованию
+    default_param={'device_type':'cisco_ios_telnet','username':'admin','password':'re','ip':str(host)}#параметры для подключения к оборудованию
     devices.append(default_param)
 
 all_result = threads_conn(connection_to_dev,devices,command,limit=30)
